@@ -1,14 +1,11 @@
 import React from 'react'
 import cow from 'cowsay-browser'
 import css from 'next/css'
-import Head from 'next/head'
+import Head from '../components/head'
 
 export default () => (
   <div>
-    <Head>
-      <title>Hello Next</title>
-      <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
-    </Head>
+    <Head />
     <main className={style}>
       <h1><img id="log" className={logo} src="static/next.svg" title="NEXT.js" alt="NEXT.js"/></h1>
       <div>Hello world!</div>
